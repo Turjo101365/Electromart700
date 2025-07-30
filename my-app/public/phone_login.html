@@ -29,22 +29,28 @@
 
       <h2>SIGN IN</h2>
 
+  
+
       <form id="phoneLoginForm">
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="number" id="phone" name="phone" placeholder="Enter 10-15 digit phone number" pattern="\d{10,15}"
-            inputmode="numeric" minlength="10" maxlength="15" required>
-          <div class="error-message" id="phoneError"></div>
-        </div>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="number" id="phone" name="phone" placeholder="Enter 10-15 digit phone number" pattern="\d{10,15}"
+      inputmode="numeric" minlength="10" maxlength="15" required>
+    <div class="error-message" id="phoneError"></div>
+  </div>
 
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
-          <div class="error-message" id="passwordError"></div>
-        </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    <div class="error-message" id="passwordError"></div>
+  </div>
 
-        <button type="submit" class="signin-btn">Sign in</button>
-      </form>
+  <p class="forgot-password">
+    <a href="forgetpassword.html">Forgot Password?</a>
+  </p>
+
+  <button type="submit" class="signin-btn">Sign in</button>
+</form>
 
       <p class="switch-method">Or sign in with <a href="email_login.html">email address</a></p>
      
