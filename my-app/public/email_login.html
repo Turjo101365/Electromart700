@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroMart700 - Email Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="login-wrapper">
+    <div class="login-container">
+      <div class="brand-container">
+        <img src="LOGO.png" alt="ElectroMart700 Logo" class="logo">
+        <h1 class="brand-name">ElectroMart700</h1>
+      </div>
+
+      <h2>SIGN IN</h2>
+
+      <form id="emailLoginForm">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+          <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <div class="error-message" id="passwordError"></div>
+        </div>
+
+        <button type="submit" class="signin-btn">Sign in</button>
+      </form>
+
+      <p class="switch-method">Or sign in with <a href="phone_login.html">phone number</a></p>
+      <!-- <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p> -->
+
+      <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

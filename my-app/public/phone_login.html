@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroMart700 - Phone Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-wrapper">
+    <div class="login-container">
+      <div class="brand-container">
+        <img src="LOGO.png" alt="ElectroMart700 Logo" class="logo">
+        <h1 class="brand-name">ElectroMart700</h1>
+      </div>
+
+      <h2>SIGN IN</h2>
+
+      <form id="phoneLoginForm">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="number" id="phone" name="phone" placeholder="Enter 10-15 digit phone number" pattern="\d{10,15}"
+            inputmode="numeric" minlength="10" maxlength="15" required>
+          <div class="error-message" id="phoneError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <div class="error-message" id="passwordError"></div>
+        </div>
+
+        <button type="submit" class="signin-btn">Sign in</button>
+      </form>
+
+      <p class="switch-method">Or sign in with <a href="email_login.html">email address</a></p>
+     
+      <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
